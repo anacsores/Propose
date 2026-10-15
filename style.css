@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #feafff; /* Off-white clean */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Impede que a tela crie barra de rolagem quando o botão fugir */
+}
+
+.container {
+    background: rgb(248, 234, 250);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: #7e004b;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #f41a9d;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #9527bc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #da30fc;
+}
+
+button {
+    background-color: #f85ee9; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #f85ee9; 
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Configuração específica do botão não */
+#btn-no {
+    background-color: #ff4d4d;
+    position: relative; /* Começa normal, o JS muda para absolute depois */
+}
+
+#btn-no:hover {
+    background-color: #cc0000;
+}
